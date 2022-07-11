@@ -1,0 +1,88 @@
+.title-bar {
+    display: block;
+    margin: 0;
+    min-width: 20rem;
+    height: 4.1875rem;
+    background-color: $teal;
+    background-blend-mode: multiply;
+    text-align: center;
+
+    h1,
+    span {
+        display: inline-block;
+        font-size: 4em;
+        letter-spacing: .018em;
+        color: $white;
+        margin: .045em 0 0 0;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+.tag-line {
+    text-align: center;
+    margin: 1em 0 .5em 0;
+
+    h2 {
+        margin: 0;
+        font-size: 1.25em;
+        font-family: $copy;
+        font-weight: 400;
+        text-transform: lowercase;
+        color: $grey;
+
+        span {
+            font-family: $teko;
+            font-size: .5em;
+            color: $orange;
+        }
+    }
+}
+
+
+@media (min-width: 40.625rem) {
+
+    .title-bar {
+        height: 5.3125rem;
+        top: 25%;
+    }
+
+    .title-bar span {
+        display: inline-block;
+    }
+
+    .title-bar h1,
+    .title-bar span {
+        font-size: 5em;
+        padding-right: .15em;
+    }
+
+    .tag-line {
+        top: 33%;
+    }
+
+    .tag-line h2,
+    .tag-line span {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+}
+
+@media (min-width: 112.5rem) {
+    .title-bar {
+        height: 7.5rem;
+
+        h1,
+        span {
+            font-size: 7em;
+        }
+    }
+
+    .tag-line {
+        h2 {
+            font-size: 2em;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.dark-mode-btn {
+    position: absolute;
+    top: 1.875rem;
+    right: 1.875rem;
+    margin: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    .dark-mode-display,
+    .dark-mode-hover {
+        display: none;
+    }
+}
+
+.ham {
+
+    .dark-mode-btn,
+    a {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        top: unset;
+        right: unset;
+        width: 2.5rem;
+        height: 2.5rem;
+
+    }
+}
+
+@media (min-width: 112.5rem) {
+    .dark-mode-btn {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+}

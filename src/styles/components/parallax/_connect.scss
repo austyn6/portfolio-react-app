@@ -1,0 +1,76 @@
+.connect {
+    width: 100%;
+    background-color: $teal;
+    padding: 1em 0 1em 0;
+    margin: 3em auto 0 auto;
+
+    h2 {
+        color: $white;
+        margin: 0 0 .5em 0;
+
+        &:before {
+            content: "";
+            width: 80%;
+            display: block;
+            height: 0.0625rem;
+            background-color: $white-50;
+            margin: .5em auto .75em auto;
+        }
+    }
+
+}
+
+.scroll-to-top {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.75em;
+    margin-bottom: 1em;
+}
+
+
+.connect svg {
+
+    #Path_3 {
+        stroke: $white-50;
+    }
+
+    #Path_73 {
+        fill: $white;
+
+        &:hover {
+            fill: $orange;
+        }
+    }
+
+}
+
+.connect-wrapper {
+    max-width: 40.625rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        color: $white;
+        display: inline-block;
+        width: 8.125rem;
+        text-align: right;
+        margin: 0 .75em 0 0;
+
+    }
+}
+
+@media (min-width: 50rem) {
+    .connect-wrapper {
+        h3 {
+            width: unset;
+        }
+
+        img {
+            margin: 0 0 -.5em 1em;
+        }
+    }
+}

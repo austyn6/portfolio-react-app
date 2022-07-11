@@ -1,0 +1,139 @@
+.splash-icons {
+    margin: 0;
+
+    .icon-works,
+    .icon-persona,
+    .icon-connect {
+        width: 4.6875rem;
+        border-radius: 50%;
+        box-shadow: 0 0.1875rem 0.375rem $grey-50;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        min-width: 18.75rem;
+        max-width: 37.5rem;
+        margin: 1em auto 0 auto;
+
+        li {
+            margin-top: 1em;
+
+            a {
+                margin: 0;
+                padding: 0;
+                color: $teal;
+                text-decoration: none;
+                font-family: $teko;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                display: block;
+                color: $orange-to-white;
+                font-size: 1.25em;
+                margin: .125em 0 0 0;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 40.625rem) {
+    .splash-icons {
+        margin-top: 6em;
+
+        .icon-works,
+        .icon-persona,
+        .icon-connect {
+            width: 7.5rem;
+        }
+
+        ul {
+            flex-direction: row;
+            align-items: flex-end;
+
+            li {
+                margin: 1.15em auto;
+
+                h3 {
+                    font-size: 2em;
+                    font-weight: 500;
+                    margin-top: .25em;
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 85.9375rem) {
+    .splash-icons {
+        ul {
+            li {
+                h3 {
+                    font-size: 2.25em;
+                    color: $orange-to-white;
+                }
+            }
+        }
+
+        .menu a span:first-child {
+            display: inline-block;
+            padding: 1.125rem;
+        }
+
+        .menu a {
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu a span:last-child {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-100%);
+        }
+
+        .menu a span {
+            transition: transform 0.15s ease-in-out;
+        }
+
+        .menu a:hover span:first-child {
+            transform: translateY(100%);
+        }
+
+        .menu a:hover span:last-child {
+            transform: none;
+        }
+
+    }
+}
+
+@media (min-width: 112.5rem) {
+    .splash-icons {
+        margin-top: 9em;
+
+        .icon-works,
+        .icon-persona,
+        .icon-connect {
+            width: 10.9375rem;
+        }
+
+        ul {
+            max-width: 62.5rem;
+
+            li h3 {
+                font-size: 3em;
+            }
+        }
+    }
+}

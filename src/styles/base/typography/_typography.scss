@@ -1,0 +1,58 @@
+h1,
+.title-bar span {
+    font-family: $teko;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+
+h2 {
+    font-family: $teko;
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: $teal;
+    letter-spacing: .02em;
+}
+
+h3,
+h4 {
+    font-family: $teko;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+
+h5,
+h6 {
+    font-family: $copy;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: $teal;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    border-radius: 5em;
+}
+
+.project-page p,
+.featured-web p,
+.about-me p,
+.journey p {
+    font-size: .9em;
+    line-height: 1.5em;
+}

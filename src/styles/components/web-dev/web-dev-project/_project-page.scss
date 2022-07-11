@@ -1,0 +1,44 @@
+.project-page {
+    text-align: center;
+
+    h1 {
+        font-size: 2.8em;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    @media (min-width: 24.375rem) {
+        h1 {
+            font-size: 3em;
+        }
+    }
+
+    h2 {
+        font-size: 1.25em;
+        color: $grey;
+        margin: 0;
+    }
+
+    @media (min-width: 24.375rem) {
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+
+    p {
+        color: $grey;
+        text-align: left;
+        margin: 0;
+    }
+
+    .the-design,
+    .the-dev {
+        margin-top: 2em;
+    }
+
+}
+
+
+@import 'project-info-section';
+
+@import 'project-features';

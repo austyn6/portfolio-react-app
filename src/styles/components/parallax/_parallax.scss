@@ -1,0 +1,48 @@
+@import 'cta-web-dev';
+
+@import 'persona';
+
+.qualifications h2:before,
+.about-me h2:before,
+.journey-h2:before,
+.q-h2:before {
+    content: "";
+    width: 80%;
+    display: block;
+    height: 0.0625rem;
+    background-color: $teal;
+    margin: 1.5em auto 1.5em auto;
+}
+
+@media (min-width: 75rem) {
+    .about-me h2:before {
+        display: none;
+    }
+
+    .para-fix {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        align-items: start;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 75rem;
+        margin: 0 auto;
+
+        .featured-web {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .persona {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .journey,
+        .journey-h2,
+        .qualifications,
+        .q-h2 {
+            grid-column: 1 / 3;
+        }
+    }
+}

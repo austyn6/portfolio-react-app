@@ -1,0 +1,223 @@
+.journey-h2 {
+    margin-top: 1.75em;
+}
+
+.journey {
+    .dot {
+        display: none;
+    }
+
+    width: 100%;
+    max-width: 40.625rem;
+
+    margin: 2em auto;
+    padding-top: 1em;
+
+}
+
+.journey-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $teal;
+    background-blend-mode: multiply;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        color: $white;
+    }
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details>summary {
+    list-style: none;
+}
+
+.journey-item {
+    padding-top: 2em;
+
+    h3,
+    h4,
+    h5,
+    p {
+        padding-left: .35em;
+    }
+
+    h3 {
+        font-size: 2em;
+        margin: 0 0 .75em 0;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    h4 {
+        font-size: 1.25em;
+        margin: 0 0 .5em 0;
+    }
+
+    h5 {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    p {
+        font-size: .8em;
+        padding-bottom: 1.5em;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .journey-item-wrapper {
+        display: block;
+
+        h3 {
+            display: none;
+        }
+    }
+}
+
+.journey-item:not(:last-child) {
+    border-bottom: 0.125rem solid $white;
+    border-radius: 0;
+}
+
+@media (min-width: 51.25rem) {
+    .journey {
+        max-width: 100%;
+        margin-bottom: 0;
+
+        svg.dot {
+            display: block;
+            margin: 0 auto 1.5em auto;
+            animation-name: dot;
+            animation-duration: 1.25s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-play-state: running;
+            animation-timing-function: ease-in-out;
+
+            @keyframes dot {
+                0% {
+                    width: 1em;
+                }
+
+                50% {
+                    width: 1.3em;
+                }
+
+                100% {
+                    width: 1em;
+                }
+
+            }
+
+            :hover {
+                fill: $orange;
+                cursor: pointer;
+            }
+        }
+
+        .journey-wrapper article:nth-child(even) {
+            svg.dot {
+                animation-delay: .625s;
+            }
+        }
+
+        .journey-wrapper {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 68.75rem;
+            background-color: unset;
+
+            .journey-item {
+                border: none;
+                width: 9.375rem;
+                padding: 0 1em;
+
+                h3,
+                h4,
+                h5,
+                p {
+                    color: $teal;
+                }
+
+                h3 {
+                    font-size: 1.4em;
+                    display: block;
+                }
+
+                details {
+                    max-width: 9.375rem;
+                }
+
+                summary h3 {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .journey::before {
+        content: "";
+        display: block;
+        width: 77%;
+        max-width: 68.75rem;
+        height: 0.125rem;
+        background-color: $teal;
+        margin: 0 auto -.7em auto;
+    }
+}
+
+@media (min-width: 55.625rem) {
+    .journey::before {
+        width: 79%;
+    }
+}
+
+@media (min-width: 70.625rem) {
+    .journey::before {
+        width: 77%;
+    }
+}
+
+@media (min-width: 72.5rem) {
+    .journey::before {
+        width: 75%;
+    }
+}
+
+@media (min-width: 75rem) {
+    .journey::before {
+        width: 79%;
+    }
+}
+
+@media (min-width: 78.125rem) {
+    .journey::before {
+        width: 77%;
+    }
+}
+
+@media (min-width: 81.25rem) {
+    .journey::before {
+        width: 75%;
+    }
+}

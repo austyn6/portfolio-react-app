@@ -1,0 +1,36 @@
+footer {
+    text-align: center;
+    width: 18.75rem;
+    margin: 0 auto;
+    padding-top: .5em;
+
+    p {
+        color: $white-50;
+    }
+}
+
+.web-dev-wrapper footer {
+    transform: rotate(-90deg);
+    position: fixed;
+    bottom: 4em;
+    right: -8.35em;
+
+    p {
+        font-size: .75em;
+        color: $teal-25;
+        margin: 0;
+    }
+}
+
+.project-page footer {
+    transform: rotate(-90deg);
+    position: fixed;
+    bottom: 9.5em;
+    right: -8.35em;
+
+    p {
+        font-size: .75em;
+        color: $teal-25;
+        margin: 0;
+    }
+}

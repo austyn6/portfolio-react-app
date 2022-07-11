@@ -1,0 +1,103 @@
+.parallax h2:not(.main-nav h2) {
+    text-align: center;
+}
+
+.about-me {
+    article {
+        background-color: $teal;
+        padding: 0.9375rem;
+        max-width: 19.5rem;
+        margin: 0 auto;
+
+        h3 {
+            color: $white;
+            text-transform: uppercase;
+            font-family: $teko;
+            font-size: 2em;
+            margin: .75em auto .5em auto;
+
+        }
+
+        h3::after {
+            content: "";
+            display: block;
+            width: 95%;
+            height: 0.0625rem;
+            background-color: $white-to-orange;
+            margin: .5em 0 0 0;
+        }
+
+        p {
+            color: $white;
+            margin: 1.5em auto .75em auto;
+            padding-right: 1.75em;
+            line-height: 1.75em;
+        }
+    }
+
+    .bio-photo {
+        display: block;
+        box-shadow: 0.125rem 0.125rem 0.3125rem $black-25;
+        border: 0.125rem solid $lightOrange;
+        margin: 0.125rem auto 0 auto;
+
+        img {
+            min-width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+    }
+}
+
+@media (min-width: 37.5rem) {
+    .about-me-card {
+        .bio-photo {
+            width: 16.25rem;
+            height: auto;
+            margin-right: 1.5em;
+            margin-bottom: .5em;
+            float: left;
+        }
+    }
+
+    .about-me article {
+        padding: 0.625rem;
+        max-width: 34.5625rem;
+        margin: 0 auto;
+    }
+
+    .about-me-card section {
+        padding-left: .5em;
+    }
+}
+
+@media (min-width: 50rem) {
+    .about-me article {
+        max-width: 40.625rem;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+    }
+
+    .about-me-card .bio-photo {
+        width: 16.75rem;
+        margin-bottom: 0;
+    }
+
+    .about-me article h3::after {
+        margin-top: .25em;
+    }
+}
+
+@media (min-width: 75rem) {
+    .about-me {
+        width: 40.25rem;
+    }
+
+    .about-me article {
+        margin-top: 1em;
+        max-width: 100%;
+    }
+}

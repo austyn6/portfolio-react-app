@@ -1,0 +1,119 @@
+// Light Mode Switchable Variables
+
+:root {
+    --teal-to-white: #006E7D;
+    --teal-to-white-90: rgba(0, 110, 125, 0.9);
+    --teal-to-white-75: rgba(0, 110, 125, 0.75);
+    --teal-to-white-50: rgba(0, 110, 125, 0.5);
+    --teal-to-white-25: rgba(0, 110, 125, 0.25);
+
+    --white-to-teal: rgb(255, 255, 255);
+    --white-to-teal-75: rgba(255, 255, 255, 0.9);
+    --white-to-teal-75: rgba(255, 255, 255, 0.75);
+    --white-to-teal-50: rgba(255, 255, 255, 0.5);
+    --white-to-teal-25: rgba(255, 255, 255, 0.25);
+
+    --grey-25-to-white-25: rgba(102, 102, 102, 0.25);
+
+    --orange-to-white: #e46c43;
+    --white-to-orange: #fff;
+
+    --invisible-to-white: unset;
+
+    --grey-to-white: #666;
+
+    --grey-to-dark-grey: rgba(102, 102, 102, 0.5);
+
+    --background-image: url('../../../images/background-desktop.jpg');
+}
+
+// Dark Mode Switchable Variables
+
+[data-theme='dark'] {
+
+    --teal-to-white: #fff;
+    --teal-to-white-90: rgba(255, 255, 255, 0.9);
+    --teal-to-white-75: rgba(255, 255, 255, 0.75);
+    --teal-to-white-50: rgba(255, 255, 255, 0.5);
+    --teal-to-white-25: rgba(255, 255, 255, 0.25);
+
+    --white-to-teal: #006E7D;
+    --white-to-teal-90: rgba(0, 110, 125, 0.9);
+    --white-to-teal-75: rgba(0, 110, 125, 0.75);
+    --white-to-teal-50: rgba(0, 110, 125, 0.5);
+    --white-to-teal-25: rgba(0, 110, 125, 0.25);
+
+    --grey-25-to-white-25: rgba(255, 255, 255, 0.25);
+
+    --orange-to-white: #fff;
+    --white-to-orange: #e46c43;
+
+    --invisible-to-white: rgb(255, 255, 255);
+
+
+    --grey-to-white: #fff;
+
+    --grey-to-dark-grey: rgba(0, 0, 0, 0.35);
+
+    --background-image: url('../../../images/background-desktop-dark.jpg');
+
+}
+
+
+// Colour Variables
+
+$teal: var(--teal-to-white);
+
+$teal-90: var(--teal-to-white-90);
+$teal-75: var(--teal-to-white-75);
+$teal-50: var(--teal-to-white-50);
+$teal-25: var(--teal-to-white-25);
+
+$darkTeal: #014a54;
+$lightTeal: #1593a4;
+
+$orange: #e46c43;
+
+$orange-75: rgba(228, 107, 67, 0.75);
+$orange-50: rgba(228, 107, 67, 0.5);
+$orange-25: rgba(228, 107, 67, 0.25);
+
+$darkOrange: #a44b2d;
+$lightOrange: #ff835a;
+
+$grey: var(--grey-to-white);
+
+$grey-75: rgba(102, 102, 102, 0.75);
+$grey-50: rgba(102, 102, 102, 0.5);
+$grey-25: rgba(102, 102, 102, 0.25);
+
+$darkGrey: #444;
+$lightGrey: #888;
+
+$black: #000;
+
+$black-75: rgba(0, 0, 0, 0.75);
+$black-50: rgba(0, 0, 0, 0.5);
+$black-25: rgba(0, 0, 0, 0.25);
+
+$white: var(--white-to-teal);
+
+$white-90: var(--white-to-teal-90);
+$white-75: var(--white-to-teal-75);
+$white-50: var(--white-to-teal-50);
+$white-25: var(--white-to-teal-25);
+
+$scrollGrey: var(--grey-25-to-white-25);
+
+$orange-to-white: var(--orange-to-white);
+$white-to-orange: var(--white-to-orange);
+
+$invisible: var(--invisible-to-white);
+
+$smokeWhite: #f5f5f5;
+$whiteNoChange: #fff;
+$tealIsReal: #006E7D;
+
+$boxShadow: var(--grey-to-dark-grey);
+
+$bg: var(--background-image);

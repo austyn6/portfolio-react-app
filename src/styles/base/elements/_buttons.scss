@@ -1,0 +1,16 @@
+button {
+    background: unset;
+    border: none;
+}
+
+a {
+    font-family: $teko;
+    text-transform: uppercase;
+}
+
+button,
+a {
+    margin: 0;
+    padding: 0;
+    border-radius: 5em;
+}

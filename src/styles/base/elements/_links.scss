@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+    color: $teal;
+    font-size: 1em;
+
+    :hover {
+        color: $orange;
+    }
+
+    :visited {
+        color: $teal;
+    }
+}
+
+a:focus {
+    background-color: unset;
+    border-radius: 0;
+}
